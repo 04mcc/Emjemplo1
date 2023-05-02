@@ -1,0 +1,11 @@
+import org.omg.Messaging.SYNC_WITH_TRANSPORT;
+
+public class A {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("hola");
+
+	}
+
+}
