@@ -42,19 +42,22 @@ public class Concesionario {
 	        return Collections.min(inventario, Comparator.comparingDouble(Vehiculo::getPrecio));
 	    }
 	  
-	  
-	  
-	  
-	  private List<Vehiculo> inventario;
-	    
-	  public Concesionario() {
-	          inventario = new ArrayList<>();
-	      }
 
-	      public void agregarVehiculo(Vehiculo vehiculo) {
-	          inventario.add(vehiculo);
-	      }
-	      
+	  public void venderVehiculo(Vehiculo vehiculo, Cliente cliente) {
+	        if (inventario.contains(vehiculo)) {
+	            inventario.remove(vehiculo);
+	            cliente.agregarVehiculoComprado(vehiculo);
+	            System.out.println(
+	            inventario.remove(vehiculo);
+	            cliente.agregar
+	"Vehículo vendido: " + vehiculo.toString());
+	        } else {
+	            System.out.println(
+	           
+	"El vehículo no está disponible en el inventario.");
+	        }
+	    }
+
 	  
 }
 	  
